@@ -5,33 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="login.php">
+  <link rel="ICON" href="img/header/logo.webp">
 </head>
 <body>
   <div class="login-container">
-    <h2>Kirish</h2>
+    <h1 style="color: white;">Saytga kirish uchun Ro'yxatdan o'ting!</h1>
+    
     
       <div class="input-group">
-        <input type="email" name="username" placeholder="Emailnigizni kiriting... "  required >
+          <input  type="text" placeholder="Ismingizni kiriting" required name="text">
       </div>
       
       <div class="input-group">
-        <input type="password" name="password" placeholder="Parolni kiriting" required >
+          <input  type="text" placeholder="Familyangizni kiriting" required name="text">
       </div>
 
-        <input type="checkbox"  required> Meni eslab qol
+     
 
 
     </form>
-
     <div class="login-links">
   
 </button> 
      <a href="index.html">
-        <button type="submit">Royxat</button>
+        <button type="submit">Kirish</button>
      </a>
+     <script>
+    function showName() {
+      let name = document.getElementById("nameInput").value;
+      if (name.trim() === "") {
+        document.getElementById("result").innerText = "Iltimos, ismingizni kiriting!";
+      } else {
+        document.getElementById("result").innerText = "Salom, " + name + "!";
+      }
+    }
+  </script>
     </div>
   </div>
-</button>
+</button> 
 </body>
 </html>

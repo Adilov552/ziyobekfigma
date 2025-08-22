@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('https://picsum.photos/1600/900?blur=2') no-repeat center center/cover;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .input-group input:focus {
-  background: #fff;
+  background: blue;
   box-shadow: 0 0 10px rgba(33, 150, 243, 0.7);
 }
 
@@ -51,12 +50,11 @@
   transform: translateY(-50%);
   color: #555;
   font-size: 14px;
-  pointer-events: none;
   transition: 0.3s;
 }
 
 .input-group input:focus + label,
-.input-group input:not(:placeholder-shown) + label {
+.input-group input + label {
   top: -8px;
   left: 10px;
   font-size: 12px;
